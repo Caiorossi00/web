@@ -1,4 +1,5 @@
 import TrackCard from './TrackCard';
+import './TracksGrid.scss';
 
 const TRACKS_DATA = [
   {
@@ -14,7 +15,7 @@ const TRACKS_DATA = [
     id: 'react',
     title: 'React',
     modulesCount: 9,
-    topicsCount: 52,
+    topicsCount: 63,
     progress: '100%',
     buttonText: 'Ver Tópicos',
     link: '#react',
