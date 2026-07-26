@@ -7,8 +7,8 @@ const Hero = () => {
         <h1 className="text-heading hero-title">Engenharia de Frontend além das ferramentas</h1>
 
         <p className="text-copy-14 hero-subtitle">
-          Um plano de estudos 100% autoral focado na mecânica interna do JavaScript, arquitetura do
-          React e modernização de código legado.
+          Um plano de estudos focado na mecânica interna do JavaScript, arquitetura do React e
+          modernização de código legado.
         </p>
 
         <div className="hero-buttons">
@@ -34,7 +34,7 @@ const Hero = () => {
             <span>★</span>
             <span>★</span>
           </div>
-          <span className="text-copy-14 rating-text">+50 stars no GitHub</span>
+          <span className="text-copy-14 rating-text">+50 estrelas no GitHub</span>
         </div>
       </div>
     </section>

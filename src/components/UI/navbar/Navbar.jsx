@@ -1,10 +1,11 @@
+import './Navbar.scss';
 const Navbar = () => {
   return (
     <header className="navbar-header">
       <div className="navbar-container">
         <div className="navbar-logo">
           <a href="/">
-            caiorossi<span>.dev</span>
+            Caiorossi<span>.dev</span>
           </a>
         </div>
 
