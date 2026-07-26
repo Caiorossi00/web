@@ -1,8 +1,10 @@
+import './Hero.scss';
+
 const Hero = () => {
   return (
     <section className="hero-container">
       <div className="hero-content">
-        <h1 className="text-heading hero-title">Engenharia de Frontend além das ferramentas.</h1>
+        <h1 className="text-heading hero-title">Engenharia de Frontend além das ferramentas</h1>
 
         <p className="text-copy-14 hero-subtitle">
           Um plano de estudos 100% autoral focado na mecânica interna do JavaScript, arquitetura do
