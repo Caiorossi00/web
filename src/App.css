@@ -1,0 +1,29 @@
+:root {
+  --font-geist-sans: "Geist Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+
+  --fs-heading: 32px;
+  --lh-heading: 40px;
+  --fw-heading: var(--font-weight-semibold);
+  --ls-heading: -1.28px;
+
+  --fs-copy-14: 14px;
+  --lh-copy-14: 20px;
+  --fw-copy-14: var(--font-weight-normal);
+}
+
+.text-heading {
+  font-family: var(--font-geist-sans);
+  font-size: var(--fs-heading);
+  line-height: var(--lh-heading);
+  font-weight: var(--fw-heading);
+  letter-spacing: var(--ls-heading);
+}
+
+.text-copy-14 {
+  font-family: var(--font-geist-sans);
+  font-size: var(--fs-copy-14);
+  line-height: var(--lh-copy-14);
+  font-weight: var(--fw-copy-14);
+}
