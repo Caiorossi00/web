@@ -17,7 +17,7 @@ const Hero = () => {
           </button>
 
           <a
-            href="https://github.com/seu-usuario/seu-repositorio"
+            href="https://github.com/Caiorossi00/Engenharia-Frontend-em-Profundidade"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary"

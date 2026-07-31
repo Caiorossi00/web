@@ -1,14 +1,25 @@
 import './App.css';
-import Hero from './components/UI/hero/Hero';
-import Navbar from './components/UI/navbar/Navbar';
-import TracksGrid from './components/UI/paths/TracksGrid';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/UI/shared/navbar/Navbar';
+import Home from './components/UI/Home';
+import Path from './components/UI/Path';
+import PathHome from './components/UI/Path/PathHome';
+import Topic from './components/UI/Topic/';
 
 function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <TracksGrid />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path="/paths/:pathSlug" element={<Path />}>
+          <Route index element={<PathHome />} />
+
+          <Route path=":topicSlug" element={<Topic />} />
+        </Route>
+      </Routes>
     </>
   );
 }

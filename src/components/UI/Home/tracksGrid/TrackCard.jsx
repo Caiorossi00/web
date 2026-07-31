@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom';
+
 const TrackCard = ({ track }) => {
   return (
-    <div className={`track-card card-${track.id}`}>
+    <Link to={`/paths/${track.slug}`} className={`track-card card-${track.id}`}>
       <div className="card-overlay"></div>
-
       <div className="card-content">
         <div className="card-badge-group">
           <span className="text-copy-14 card-badge progress-badge">{track.progress} concluído</span>
@@ -16,11 +17,11 @@ const TrackCard = ({ track }) => {
           <span>{track.topicsCount} tópicos</span>
         </div>
 
-        <a href={track.link} className="text-copy-14 card-action-btn">
+        <span className="text-copy-14 card-action-btn">
           {track.buttonText} <span className="arrow">→</span>
-        </a>
+        </span>
       </div>
-    </div>
+    </Link>
   );
 };
 

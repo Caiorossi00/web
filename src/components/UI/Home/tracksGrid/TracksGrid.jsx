@@ -4,30 +4,30 @@ import './TracksGrid.scss';
 const TRACKS_DATA = [
   {
     id: 'javascript',
+    slug: 'javascript',
     title: 'JavaScript',
     modulesCount: 4,
     topicsCount: 24,
     progress: '100%',
     buttonText: 'Ver Tópicos',
-    link: '#javascript',
   },
   {
     id: 'react',
+    slug: 'react',
     title: 'React',
     modulesCount: 9,
     topicsCount: 63,
     progress: '100%',
     buttonText: 'Ver Tópicos',
-    link: '#react',
   },
   {
     id: 'redux-legado',
+    slug: 'redux',
     title: 'Redux Legado',
     modulesCount: 5,
     topicsCount: 21,
     progress: '15%',
     buttonText: 'Continuar Lendo',
-    link: '#redux-legado',
   },
 ];
 

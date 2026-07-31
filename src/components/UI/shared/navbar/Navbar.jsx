@@ -1,29 +1,33 @@
+import { Link } from 'react-router-dom';
 import './Navbar.scss';
+
 const Navbar = () => {
   return (
     <header className="navbar-header">
       <div className="navbar-container">
         <div className="navbar-logo">
-          <a href="/">
+          <Link to="/">
             Caiorossi<span>.dev</span>
-          </a>
+          </Link>
         </div>
 
         <nav className="navbar-navigation">
-          <a href="#javascript" className="text-copy-14 nav-link">
+          <Link to="/paths/javascript" className="text-copy-14 nav-link">
             JavaScript
-          </a>
-          <a href="#react" className="text-copy-14 nav-link">
+          </Link>
+
+          <Link to="/paths/react" className="text-copy-14 nav-link">
             React
-          </a>
-          <a href="#redux-legado" className="text-copy-14 nav-link">
+          </Link>
+
+          <Link to="/paths/redux" className="text-copy-14 nav-link">
             Redux Legado
-          </a>
+          </Link>
         </nav>
 
         <div className="navbar-actions">
           <a
-            href="https://github.com/seu-usuario/seu-repositorio"
+            href="https://github.com/Caiorossi00/Engenharia-Frontend-em-Profundidade"
             target="_blank"
             rel="noopener noreferrer"
             className="text-copy-14 btn-navbar"

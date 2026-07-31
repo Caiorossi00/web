@@ -28,12 +28,24 @@
   background-size: cover;
   background-position: center;
 
+  // Reset do React Router Link
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 2px solid #111111;
+    outline-offset: 4px;
+  }
+
   &.card-javascript {
     background-image: url('https://www.colorhexa.com/f7df1e.png');
   }
+
   &.card-react {
     background-image: url('https://pickcoloronline.com/brands/react/colors-of-react-512.png');
   }
+
   &.card-redux-legado {
     background-image: url('https://preview.colorkit.co/color/6f42c1.png?size=social&type=opengraph');
   }
@@ -44,17 +56,22 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.75));
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55));
     z-index: 1;
     transition: background 0.3s ease;
   }
 
   &:hover {
     .card-overlay {
-      background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.65));
+      background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.25));
     }
+
     .card-action-btn {
       background-color: rgba(255, 255, 255, 0.25);
+
+      .arrow {
+        transform: translateX(4px);
+      }
     }
   }
 
@@ -118,7 +135,6 @@
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     color: #ffffff;
-    text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 1px;
@@ -135,12 +151,6 @@
     .arrow {
       font-size: 14px;
       transition: transform 0.2s ease;
-    }
-
-    &:hover {
-      .arrow {
-        transform: translateX(4px);
-      }
     }
   }
 }
